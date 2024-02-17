@@ -1,8 +1,5 @@
 .welcome {
-    background: url("../assets/images/sp.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: left;
+    background: url("../assets/images/sp.png") left / cover no-repeat;
 }
 
 .welcome > .container > .content {
