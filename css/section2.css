@@ -1,3 +1,15 @@
 .second {
-    background: url("../assets/images/w2.jpg") center / cover no-repeat;
+    background: url("../assets/images/two.png") center / cover no-repeat;
+}
+
+.second > .container > .content {
+    position: absolute;
+    left: 5%;
+    bottom: 20%;
+    max-width: 350px;
+}
+
+.second > .container > .content > h2 {
+    font-size: 3rem;
+    color: #fff;
 }

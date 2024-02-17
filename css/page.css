@@ -1,5 +1,5 @@
 .welcome {
-    background: url("../assets/images/sp.png") left / cover no-repeat;
+    background: url("../assets/images/sp.png") center / cover no-repeat;
 }
 
 .welcome > .container > .content {
