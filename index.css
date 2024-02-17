@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+section {
+    min-height: 100vh;
+    padding: 0 5%;
+    position: relative;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    border: 1px solid #000;
+    outline: none;
+    background: transparent;
+    color: #fff;
+}

@@ -1,0 +1,50 @@
+.welcome {
+    background: url("../assets/images/sp.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.welcome > .container > .content {
+    position: absolute;
+    bottom: 20%;
+    left: 5%;
+    max-width: 350px;
+}
+
+.welcome > .container > .content > h1 {
+    font-size: 3rem;
+}
+
+.welcome > .container > .content > h1 > span {
+    color: #fff;
+    font-weight: 900;
+}
+
+.welcome > .container > .content > button {
+    margin-top: 1rem;
+    width: 9rem;
+    border-radius: 5px;
+    padding: .5rem 2rem;
+}
+
+.welcome > .container > img {
+    position: absolute;
+    left: 50%;
+    bottom: 8%;
+    width: 40px;
+    height: 40px;
+    animation: move 1s infinite ease-in-out;
+}
+
+@keyframes move {
+    0% {
+        bottom: 8%;
+    }
+    50% {
+        bottom: 5%;
+    }
+    100% {
+        bottom: 8%;
+    }
+}
