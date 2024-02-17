@@ -1,15 +1,34 @@
 .second {
-    background: url("../assets/images/two.png") center / cover no-repeat;
+    background: url("../assets/images/city.jpg") center / cover no-repeat;
 }
 
 .second > .container > .content {
     position: absolute;
-    left: 5%;
+    left: 0%;
+    right: 0;
+    margin: 0 auto;
     bottom: 20%;
-    max-width: 350px;
+    max-width: 450px;
 }
 
 .second > .container > .content > h2 {
     font-size: 3rem;
     color: #fff;
+}
+
+.second > .container > .content > p {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.second > .container > .content > p > span {
+    font-size: 1.4rem;
+    color: rgb(1, 10, 97);
+    font-weight: 600;
+}
+
+.second > .container > .content > button {
+    margin-top: 1rem;
+    padding: .5rem 2rem;
+    
 }
