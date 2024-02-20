@@ -31,24 +31,3 @@
     border-radius: 5px;
     padding: .5rem 2rem;
 }
-
-.welcome > .container > img {
-    position: absolute;
-    left: 50%;
-    bottom: 8%;
-    width: 40px;
-    height: 40px;
-    animation: move 1s infinite ease-in-out;
-}
-
-@keyframes move {
-    0% {
-        bottom: 8%;
-    }
-    50% {
-        bottom: 5%;
-    }
-    100% {
-        bottom: 8%;
-    }
-}
