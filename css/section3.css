@@ -1,0 +1,8 @@
+
+.container {
+	margin-top: 5rem;
+}
+
+.container > .box > .content > h3 {
+	font-size: 2rem;
+}

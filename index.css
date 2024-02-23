@@ -10,6 +10,7 @@ section {
     position: relative;
     background-color: #000;
     overflow-y: auto;
+    color: #fff;
 }
 
 a {
