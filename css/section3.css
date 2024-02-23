@@ -1,9 +1,9 @@
 
 .container {
-	margin-top: 5rem;
+	margin-top: 40%;
 }
 
-.container > .box > .content > h3 {
+.container > .box > .b-content > h3 {
 	font-size: 2rem;
 }
 
@@ -15,5 +15,25 @@
     height: 100%;
     object-fit: cover;
     object-position: top;
-    mask-image: linear-gradient(transparent, rgba(0, 0, 0, 1.0) 70%, transparent)
+    mask-image: linear-gradient(transparent, rgba(0, 0, 0, 1.0), transparent);
+}
+
+.box > .b-content {
+	position: relative;
+	z-index: 11;
+	max-width: 500px;
+}
+
+.b-content > p {
+	margin-top: 1rem;
+}
+
+.b-content > img {
+	width: 10rem;
+}
+
+.b-content > button {
+	margin-top: 1rem;
+	padding: .5rem 2rem;
+	border-color: #fff;
 }
