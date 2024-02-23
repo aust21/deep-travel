@@ -1,23 +1,14 @@
 footer {
+	overflow-y: auto;
+}
+
+footer > .f-box {
+	margin-top: 5rem;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center
 }
 
-input {
-	padding: .5rem 1rem;
-	outline: none;
-	border-radius: 5px;
-	background: transparent;
-	border: 1px solid #fff;
-	color: #fff;
-	margin-top: 1rem;
-	width: 15rem;
-}
- .f-box > p {
- 	margin-top: .5rem;
- }
-
-svg {
-	width: 1rem;
+footer > .f-box > p {
+	margin-right: 2rem;
 }
