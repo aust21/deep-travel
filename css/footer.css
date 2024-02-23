@@ -1,0 +1,19 @@
+footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center
+}
+
+input {
+	padding: .5rem 1rem;
+	outline: none;
+	border-radius: 5px;
+	background: transparent;
+	border: 1px solid #fff;
+	color: #fff;
+	margin-top: 1rem;
+	width: 15rem;
+}
+ .f-box > p {
+ 	margin-top: .5rem;
+ }
