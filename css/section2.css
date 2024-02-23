@@ -21,7 +21,7 @@
 }
 .second > .flex > img {
 	/* margin-top: 10rem; */
-	width: 35rem;
+	width: 50%;
 	/* height: 25rem; */
 }
 
@@ -29,10 +29,10 @@
 	position: absolute;
 	color: #fff;
 	background: #2525259f;
-	width: 500px;
+	width: 55%;
 	min-height: 200px;
 	top: 40%;
-	left: 90%;
+	left: 45%;
 	padding: 2rem;
 	border-radius: 5px
 }
