@@ -17,3 +17,7 @@ input {
  .f-box > p {
  	margin-top: .5rem;
  }
+
+svg {
+	width: 1rem;
+}
