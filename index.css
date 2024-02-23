@@ -9,6 +9,7 @@ section {
     padding: 0 5%;
     position: relative;
     background-color: #000;
+    overflow-y: auto;
 }
 
 a {
