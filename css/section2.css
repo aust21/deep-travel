@@ -15,8 +15,23 @@
 	font-size: 3rem;
 }
 
-.second > img {
+.second > .flex {
+
+	position: relative;
+}
+.second > .flex > img {
 	margin-top: 5rem;
 	width: 30rem;
 	/* height: 25rem; */
+}
+
+.text {
+	position: absolute;
+	color: #fff;
+	background: #252525;
+	width: 500px;
+	height: 200px;
+	top: 50%;
+	left: 40%;
+	padding: 2rem;
 }
