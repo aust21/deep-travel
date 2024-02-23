@@ -21,7 +21,7 @@
 }
 .second > .flex > img {
 	margin-top: 5rem;
-	width: 30rem;
+	width: 35rem;
 	/* height: 25rem; */
 }
 
@@ -30,8 +30,14 @@
 	color: #fff;
 	background: #252525;
 	width: 500px;
-	height: 200px;
+	min-height: 200px;
 	top: 50%;
-	left: 40%;
+	left: 45%;
 	padding: 2rem;
+	border-radius: 5px
+}
+
+.text > h3 {
+	font-size: 2rem;
+	margin-bottom: 1rem;
 }

@@ -12,7 +12,7 @@
 .welcome > .container > .content {
     position: absolute;
     bottom: 20%;
-    left: 5%;
+    left: 10%;
     max-width: 350px;
 }
 
