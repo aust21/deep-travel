@@ -55,7 +55,6 @@ header > nav, header > nav > ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 header > nav > ul > li {
@@ -71,11 +70,6 @@ header > nav > ul > li > a {
   .navigation {
     inset: 0 0 0 40%;
   }
-
-}
-
-@media (min-width: 35em) and (max-width: 55em) {
-
 }
 
 @media (min-width:55em) {

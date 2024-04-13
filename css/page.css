@@ -28,7 +28,10 @@
 
 .welcome > .container > .content > button {
     margin-top: 1rem;
-    width: 9rem;
-    border-radius: 5px;
-    padding: .5rem 2rem;
+    width: 12rem;
+    padding: .7rem 2rem;
+}
+
+.welcome > .container > .content > button > a {
+  font-size: 20px;
 }

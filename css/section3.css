@@ -4,7 +4,7 @@
 }
 
 .container > .box > .b-content > h3 {
-	font-size: 2rem;
+	font-size: 4rem;
 }
 
 .image {
@@ -26,6 +26,8 @@
 
 .b-content > p {
 	margin-top: 1rem;
+	font-size: 22px;
+	line-height: 30px
 }
 
 .b-content > img {
@@ -36,4 +38,5 @@
 	margin-top: 1rem;
 	padding: .5rem 2rem;
 	border-color: #fff;
+	font-size: 20px
 }
