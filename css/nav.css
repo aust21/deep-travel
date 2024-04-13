@@ -7,17 +7,79 @@ header > nav {
     margin: 0 auto;
     z-index: 11111;
 }
+header > nav > button {
+  border: 0;
+  padding: .3rem 2rem;
+  z-index: 111;
+  font-size: 20px;
+  background: hsl(0 0% 100% / .1);
+  backdrop-filter: blur(1rem)
+}
 
 header > nav > img {
-    width: 5rem;
+    width: 5.5rem;
+}
+
+.fix {
+  display: none;
+}
+
+.navigation {
+  background: hsl(0 0% 0% /.8);
+  transition: transform 350ms ease-out;
+}
+
+/* side menu */
+.navigation {
+  position: fixed;
+  flex-direction: column;
+  justify-content: initial;
+  gap: 2rem;
+  inset: 0 0 0 73%;
+  padding: 10rem 2rem;
+  transform: translateX(100%);
+}
+
+.navigation[data-visible="true"] {
+  transform: translateX(0%);
+}
+
+@supports (backdrop-filter: blur(1rem)) {
+  .navigation {
+    background: hsl(0 0% 100% /.1);
+    backdrop-filter: blur(1rem);
+  }
 }
 
 header > nav, header > nav > ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 header > nav > ul > li {
     margin-left: 2rem;
+}
+
+header > nav > ul > li > a {
+  font-size: 20px;
+}
+
+
+@media (max-width: 35em) {
+  .navigation {
+    inset: 0 0 0 40%;
+  }
+
+}
+
+@media (min-width: 35em) and (max-width: 55em) {
+
+}
+
+@media (min-width:55em) {
+  .fix {
+    display: flex;
+  }
 }
