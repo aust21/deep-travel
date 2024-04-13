@@ -1,19 +1,4 @@
-.content {
-	text-align: center;
-}
 
-.content > h2, .content > p {
-	color: #fff;
-}
-
-.content > p {
-	font-size: 1.7rem;
-}
-
-.content > h2 {
-	margin-top: 3rem;
-	font-size: 3rem;
-}
 
 .second > .flex {
 	position: relative;

@@ -21,6 +21,15 @@
     font-size: 5rem;
 }
 
+
+.content > h1, .content > p {
+	color: #fff;
+}
+
+.content > p {
+	font-size: 1.7rem;
+}
+
 .welcome > .container > .content > h1 > span {
     color: #fff;
     font-weight: 900;
@@ -34,4 +43,25 @@
 
 .welcome > .container > .content > button > a {
   font-size: 20px;
+}
+
+@media (max-width:35em) {
+  .welcome > .container > .content > h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .content > p {
+    font-size: 1.6rem;
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .welcome > .container > .content > button {
+    display: block;
+    margin: 1rem auto;
+    background: #65baa9;
+    border: 0;
+    border-radius: 5px;
+  }
 }
