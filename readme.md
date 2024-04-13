@@ -4,13 +4,13 @@
 Website for a Space Travel Company
 
 ## Overview
-This website is dedicated to showcasing the services and offerings of our space travel company. Users can explore different destinations, learn about our spacecraft, and book their next adventure to the stars.
+This website is dedicated to showcasing the services and offerings of a space travel company. Users can explore different destinations, learn about spacecrafts, and book their next adventure to the stars.
 
 ## Features
-- Destination Exploration: Discover exotic destinations throughout the galaxy.
-- Spacecraft Showcase: Learn about our state-of-the-art spacecraft and their capabilities.
-- Booking System: Easily book your space journey with our intuitive booking system.
-- FAQ Section: Answers to common questions about space travel and our company.
+- Destination Exploration: Discover exotic destinations throughout the galaxy. (future update)
+- Spacecraft Showcase: Learn about state-of-the-art spacecrafts and their capabilities. (future update)
+- Booking System: Easily book your space journey with an intuitive booking system. (future update)
+- FAQ Section: Answers to common questions about space travel and the company. (future update)
 
 ## Technologies Used
 - HTML5
