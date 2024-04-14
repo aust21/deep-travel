@@ -33,7 +33,7 @@ To run this website locally, simply clone the repository and open the index.html
 
 ## Screenshots
 
-![mobile-image](assets\readmeImages\Capture.PNG)
+![mobile-image](assets/readmeImages/Capture.PNG)
 
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
