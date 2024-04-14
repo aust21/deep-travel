@@ -35,6 +35,7 @@ To run this website locally, simply clone the repository and open the index.html
 
 ![mobile-image](assets/readmeImages/Capture1.PNG)
 ![mobile-image](assets/readmeImages/Capture.PNG)
+![mobile-image](assets/readmeImages/Capture3.PNG)
 
 
 ## Contributors
