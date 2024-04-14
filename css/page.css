@@ -49,10 +49,6 @@
     background: transparent;
 }
 
-.welcome > .container > .content > button > .flex {
-  gap: 1rem;
-  align-items: center;
-}
 
 .welcome > .container > .content > button > a > svg {
   margin-top: 2px
@@ -76,6 +72,7 @@
 
   .welcome > .container > .content > button {
     display: block;
+    
     margin: 1rem auto;
     background: #65baa9;
     border: 0;
