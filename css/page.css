@@ -61,19 +61,16 @@
 @media (max-width:35em) {
   .welcome > .container > .content > h1 {
     font-size: 3rem;
-    text-align: center;
   }
 
   .content > p {
     font-size: 1.6rem;
     max-width: 90%;
+  }
+  .welcome > .container > .content {
     text-align: center;
   }
-
   .welcome > .container > .content > button {
-    display: block;
-    
-    margin: 1rem auto;
     background: #65baa9;
     border: 0;
     border-radius: 5px;
