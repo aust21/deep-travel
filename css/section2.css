@@ -1,14 +1,20 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
 .second > .flex {
 	position: relative;
 }
 .second > .flex > img {
 	aspect: 1/2;
-	width: 90%;
-	height: 50rem;
+	width: 50%;
+	/* height: 50rem; */
 }
 
 .text > p {
-	font-size: 23px;
+	font-size: 17px;
 	line-height: 30px;
 }
 
@@ -16,10 +22,10 @@
 	position: absolute;
 	color: #fff;
 	background: #2525259f;
-	width: 700px;
+	width: 650px;
 	min-height: 200px;
 	top: 40%;
-	right: -40%;
+	right: -3%;
 	padding: 2rem;
 	border-radius: 5px
 }
@@ -32,7 +38,7 @@
 }
 
 .text > h3 {
-	font-size: 3rem;
+	font-size: 1.8rem;
 	margin-bottom: 1rem;
 }
 

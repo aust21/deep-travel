@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
 header > nav {
     width: 80%;
     position: fixed;
@@ -11,13 +17,13 @@ header > nav > button {
   border: 0;
   padding: .3rem 2rem;
   z-index: 111;
-  font-size: 20px;
+  font-size: 17px;
   background: hsl(0 0% 100% / .1);
   backdrop-filter: blur(1rem)
 }
 
 header > nav > img {
-    width: 5.5rem;
+    width: 5rem;
 }
 
 .fix {
@@ -62,7 +68,7 @@ header > nav > ul > li {
 }
 
 header > nav > ul > li > a {
-  font-size: 20px;
+  font-size: 17px;
 }
 
 
