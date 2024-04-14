@@ -41,10 +41,21 @@
     font-weight: 900;
 }
 
+
 .welcome > .container > .content > button {
     margin-top: 1rem;
-    width: 10rem;
-    padding: .7rem 1.4rem;
+    padding: .4rem 1.4rem;
+    border: 1px solid #000;
+    background: transparent;
+}
+
+.welcome > .container > .content > button > .flex {
+  gap: 1rem;
+  align-items: center;
+}
+
+.welcome > .container > .content > button > a > svg {
+  margin-top: 2px
 }
 
 .welcome > .container > .content > button > a {

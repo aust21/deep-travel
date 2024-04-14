@@ -13,13 +13,23 @@ header > nav {
     margin: 0 auto;
     z-index: 11111;
 }
-header > nav > button {
+header > nav > .buttons > .toggle {
   border: 0;
+  /* border-radius: 1rem; */
   padding: .3rem 2rem;
   z-index: 111;
   font-size: 17px;
   background: hsl(0 0% 100% / .1);
-  backdrop-filter: blur(1rem)
+  backdrop-filter: blur(1rem);
+  margin-left: 1rem;
+}
+
+header > nav > .buttons > .book {
+  border: 0;
+  background: #b0a8ba;
+  padding: .3rem 1rem;
+  font-size: 17px;
+  /* border-radius: 1rem; */
 }
 
 header > nav > img {
