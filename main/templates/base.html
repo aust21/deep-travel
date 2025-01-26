@@ -3,13 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="{{ url_for('static', 'css/output.css') }}" />
-    <link rel="stylesheet" href="{{ url_for('static', 'css/index.css') }}" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/output.css') }}"
+    />
 
-    {% block title %}Deep Travel{% endblock %}
+    <title>{% block title %}{% endblock %}</title>
   </head>
-  <body>
+  <body class="bg-[#303030]">
     {% include 'nav.html' %}
-    <main>{% block content}{% endblock %}</main>
+    <main class="">{% block content %}{% endblock %}</main>
   </body>
 </html>

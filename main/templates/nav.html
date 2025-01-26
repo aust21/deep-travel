@@ -1,24 +1,37 @@
-{% extends 'base.html' %} {% block title %}Home | Deep Travel{% endblock %}
-<header>
-  <nav>
-    <img src="{{ url_for('assets/logoo.png') }}" alt="DeepT" />
-    <ul class="fix">
-      <li><a href="">Missions</a></li>
-      <li><a href="">LyynSat</a></li>
-      <li><a href="">Next Flights</a></li>
+<header class="w-full fixed z-10">
+  <nav class="nav flex justify-between items-center w-full mx-auto py-5 px-10">
+    <img
+      src="{{ url_for('static', filename='assets/logo.png') }}"
+      alt="DeepT"
+      class="w-[8rem]"
+    />
+
+    <ul
+      id="navigation"
+      class="navigation flex justify-between items-center"
+      data-visible="false"
+    >
+      <li class="mr-[1.5rem]"><a href="" class="text-white">HomeStead 1</a></li>
+      <li class="mr-[1.5rem]"><a href="" class="text-white">Spaceship L</a></li>
+      <li class="mr-[1.5rem]"><a href="" class="text-white">TetraTron V</a></li>
     </ul>
-    <ul id="navigation" class="navigation flex" data-visible="false">
-      <li><a href="">Spaceship 1</a></li>
-      <li><a href="">Spaceship L</a></li>
-      <li><a href="">TetraTron T</a></li>
-      <li><a href="">Home Yan</a></li>
-      <li><a href="">Lani Station</a></li>
-    </ul>
+
     <div class="buttons">
-      <button class="book" type="button" name="book-btn">
+      <button
+        class="mr-[2rem] rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-xs hover:bg-gray-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+        type="button"
+        name="book-btn"
+      >
         <a href="book.html">Book now</a>
       </button>
-      <button class="toggle" type="button" name="button" aria-expanded="false">
+      <button
+        class="toggle"
+        type="button"
+        name="button"
+        aria-expanded="false"
+        class="text-white"
+        style="color: white"
+      >
         Menu
       </button>
     </div>
