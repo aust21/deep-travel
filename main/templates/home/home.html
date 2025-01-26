@@ -3,13 +3,21 @@ block content %}
 <section
   class="relative min-h-[80vh] bg-[url(../../static/assets/p2.jpg)] bg-no-repeat bg-cover"
 >
-  <div class="relative z-10 text-white">
-    <h1>Hello</h1>
+  <div
+    class="absolute translate-y-[-50%] top-[80%] left-[4rem] text-white w-[40%]"
+  >
+    <h1 class="z-10 text-6xl text-white font-bold">HomeStead 1</h1>
   </div>
   <!-- Add the fading effect -->
   <div
     class="absolute inset-0 before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-b before:from-transparent before:via-transparent before:to-[#303030] before:z-[1]"
     style="--start-point: 50%; --end-point: 80%"
   ></div>
+</section>
+
+<section>
+  <h2 class="text-5xl text-center my-10 text-[#6e6e6e] font-semibold">
+    It's a New Beginning
+  </h2>
 </section>
 {% endblock %}
