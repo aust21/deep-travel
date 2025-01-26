@@ -1,0 +1,26 @@
+{% extends 'base.html' %} {% block title %}Home | Deep Travel{% endblock %}
+<header>
+  <nav>
+    <img src="{{ url_for('assets/logoo.png') }}" alt="DeepT" />
+    <ul class="fix">
+      <li><a href="">Missions</a></li>
+      <li><a href="">LyynSat</a></li>
+      <li><a href="">Next Flights</a></li>
+    </ul>
+    <ul id="navigation" class="navigation flex" data-visible="false">
+      <li><a href="">Spaceship 1</a></li>
+      <li><a href="">Spaceship L</a></li>
+      <li><a href="">TetraTron T</a></li>
+      <li><a href="">Home Yan</a></li>
+      <li><a href="">Lani Station</a></li>
+    </ul>
+    <div class="buttons">
+      <button class="book" type="button" name="book-btn">
+        <a href="book.html">Book now</a>
+      </button>
+      <button class="toggle" type="button" name="button" aria-expanded="false">
+        Menu
+      </button>
+    </div>
+  </nav>
+</header>
