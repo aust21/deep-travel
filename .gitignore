@@ -25,6 +25,7 @@
 !.vscode/extensions.json
 !.vscode/*.code-snippets
 
+venv/
 # Local History for Visual Studio Code
 .history/
 
