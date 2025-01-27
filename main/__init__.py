@@ -13,16 +13,10 @@ def create_app():
     app.config['SECRET_KEY'] = os.urandom(24)
     app.config["SQLALCHEMY_DATABASE_URI"] = f"sqlite:///{DB_NAME}"
     db.init_app(app)
-    # from .auth import auth
     from .models import User
-    # from .user_view import user_views
-    # from .shop import shop
-    # from .admin import admin
+    from .views import views
 
-    # app.register_blueprint(user_views, url_prefix="/")
-    # app.register_blueprint(shop, prefix="/shop")
-    # app.register_blueprint(admin, url_prefix="/admin")
-
+    app.register_blueprint(views, url_prefix="/")
 
     with app.app_context():
         db.create_all()

@@ -1,10 +1,11 @@
 <header class="w-full fixed z-10">
   <nav class="nav flex justify-between items-center w-full mx-auto py-5 px-10">
-    <img
-      src="{{ url_for('static', filename='assets/logo.png') }}"
-      alt="DeepT"
-      class="w-[8rem]"
-    />
+    <a href="{{ url_for('views.home') }}"
+      ><img
+        src="{{ url_for('static', filename='assets/logo.png') }}"
+        alt="DeepT"
+        class="w-[8rem]"
+    /></a>
 
     <ul
       id="navigation"
@@ -28,7 +29,7 @@
         type="button"
         name="book-btn"
       >
-        <a href="book.html">Book now</a>
+        <a href="book.html">Book a seat</a>
       </button>
       <button
         class="toggle"
