@@ -1,12 +1,18 @@
 {% extends 'base.html' %} {% block title %}Home | Deep Travel{% endblock %} {%
 block content %}
 <section
-  class="relative min-h-[80vh] bg-[url(../../static/assets/p2.jpg)] bg-no-repeat bg-cover"
+  class="relative min-h-[80vh] bg-[url(../../static/assets/r4.jpg)] bg-no-repeat bg-cover"
 >
   <div
-    class="absolute translate-y-[-50%] top-[80%] left-[4rem] text-white w-[40%]"
+    class="absolute translate-y-[-50%] top-[80%] left-[4rem] text-white w-[50%] z-30"
   >
-    <h1 class="z-10 text-6xl text-white font-bold">HomeStead 1</h1>
+    <h1 class="text-6xl text-white font-bold mb-7">
+      Explore the <span class="text-[#00bbe7]">universe</span
+      ><span class="text-[#00FF00]">.</span>
+    </h1>
+    <a class="text-xl font-semibold bg-[#66baa8] px-5 py-2" href=""
+      >HomeStead 1</a
+    >
   </div>
   <!-- Add the fading effect -->
   <div
@@ -15,24 +21,28 @@ block content %}
   ></div>
 </section>
 
-<section class="mb-10">
-  <h2 class="text-5xl text-center my-10 text-[#878282] font-semibold">
+<section class="mb-10 pt-20">
+  <!-- <h2 class="text-5xl text-center my-10 text-[#878282] font-semibold">
     It's a New Beginning
-  </h2>
+  </h2> -->
 
   <div>
-    <div
-      class="flex justify-between w-[80%] mx-auto gap-5 bg-[#3b3b3b] px-5 py-1 rounded-2xl"
-    >
-      <div>
-        <h3 class="text-[1.5rem]">
-          Your First Step Into Humanity's Final Frontier
+    <div class="w-[80%] mx-auto gap-5 relative">
+      <img
+        src="{{url_for('static', filename='assets/i3.jpg')}}"
+        alt="rocket"
+        class="w-[100%] h-[400px] object-cover object-center rounded-2xl"
+      />
+      <div
+        class="bg-[#303030] px-6 py-1 rounded-2xl absolute bottom-[-15%] translate-x-[-50%] left-[15%] w-[50%]"
+      >
+        <h3 class="text-[1.5rem] text-[#cddffe] font-bold">
+          The Backbone of Your Space Adventure
         </h3>
-        <p>
-          We're opening the universe for everyone. Adventure is no longer a
-          dream. It's a reality waiting for you. Explore not just worlds—but
-          opportunities. Transform desolate landscapes into thriving outposts.
-          Together, we're not just visiting; we're staying.
+        <p class="text-[#afb5c0] font-semibold mt-3">
+          Our vehicles are engineered with cutting-edge technology to withstand
+          the harshest conditions of space travel. From atmospheric exits to
+          interplanetary landings, every journey is seamless and safe.
         </p>
       </div>
     </div>
