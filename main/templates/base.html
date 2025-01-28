@@ -14,5 +14,13 @@
     {% include 'nav.html' %}
     <main class="">{% block content %}{% endblock %}</main>
   </body>
+
+  <footer class="flex justify-between bg-[#232324] items-center px-[10%] py-5">
+    <div class="w-fit mx-auto flex justify-between gap-5 items-center">
+      <p class="text-sm text-white">DeepTravel©2025</p>
+      <a class="text-sm text-white" href="">Contact us</a>
+      <a class="text-sm text-white" href="">Launch payload</a>
+    </div>
+  </footer>
   <script src="{{ url_for('static', filename='app.js') }}"></script>
 </html>
