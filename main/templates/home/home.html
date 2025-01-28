@@ -2,11 +2,14 @@
 block content %}
 
 <link rel="stylesheet" href="{{url_for('static', filename='css/cards.css')}}" />
+
+<link rel="stylesheet" href="{{url_for('static', filename='css/media.css')}}" />
+
 <section
-  class="relative min-h-[80vh] bg-[url(../../static/assets/r5.jpg)] bg-no-repeat bg-cover"
+  class="first-sec relative min-h-[80vh] bg-[url(../../static/assets/r5.jpg)] bg-no-repeat bg-cover"
 >
   <div
-    class="absolute translate-y-[-50%] top-[80%] left-[4rem] text-white w-[50%] z-30"
+    class="intro absolute translate-y-[-50%] top-[80%] left-[4rem] text-white w-[50%] z-30"
   >
     <h1 class="text-6xl text-white font-bold mb-7">
       Explore the <span class="text-[#00bbe7]">universe</span
@@ -24,19 +27,15 @@ block content %}
 </section>
 
 <section class="mb-[7rem] pt-20">
-  <!-- <h2 class="text-5xl text-center my-10 text-[#878282] font-semibold">
-    It's a New Beginning
-  </h2> -->
-
   <div>
-    <div class="w-[80%] mx-auto gap-5 relative">
+    <div class="box w-[80%] mx-auto gap-5 relative">
       <img
         src="{{url_for('static', filename='assets/p2.jpg')}}"
         alt="rocket"
         class="w-[100%] h-[400px] object-cover object-center rounded-2xl"
       />
       <div
-        class="bg-[#dfdcdc] px-10 py-2 rounded-2xl absolute bottom-[-15%] translate-x-[-50%] left-[15%] opacity-80 w-[50%] transition hover:opacity-100 cursor-pointer"
+        class="homes bg-[#dfdcdc] px-10 py-2 rounded-2xl absolute bottom-[-15%] translate-x-[-50%] left-[15%] opacity-80 w-[50%] transition hover:opacity-100 cursor-pointer"
       >
         <h3 class="text-[1.5rem] text-[#394a63] font-bold">
           Homestead 1: Your New Frontier Awaits
@@ -53,7 +52,7 @@ block content %}
 </section>
 
 <section class="py-10">
-  <div class="w-[40%] mx-auto text-center">
+  <div class="vehicles w-[40%] mx-auto text-center">
     <h3 class="text-2xl text-[#f9f7f7] mb-5 font-semibold">
       Our Vehicles: The Backbone of Your Space Adventure
     </h3>
@@ -103,7 +102,7 @@ block content %}
 </section>
 
 <section class="py-10">
-  <div class="w-[40%] mx-auto text-center">
+  <div class="jour w-[40%] mx-auto text-center">
     <h3 class="text-2xl text-[#f9f7f7] mb-5 font-semibold">
       Your Adventure Begins Here
     </h3>
@@ -117,7 +116,9 @@ block content %}
       type="button"
       name="book-btn"
     >
-      <a href="book.html" class="w-full block">Book a seat</a>
+      <a href="{{ url_for('views.book_seat') }}" class="w-full block"
+        >Book a seat</a
+      >
     </button>
   </div>
 </section>
