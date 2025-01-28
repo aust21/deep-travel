@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Error | Deep Travel</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/output.css') }}"
+    />
+  </head>
+  <body>
+    <section
+      class="min-h-screen flex justify-between items-center bg-[#303030]"
+    >
+      <div class="mx-auto text-center">
+        <img
+          src="{{ url_for('static', filename='assets/eye.png') }}"
+          alt="Thank you"
+          class="block relative bounce-animation"
+        />
+        <h1 class="font-semibold text-sm text-[#ff0000]">
+          Something went wrong!
+        </h1>
+        <button
+          class="mt-[2rem] mx-auto rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-xs hover:bg-gray-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white w-[70%]"
+          type="button"
+          name="book-btn"
+        >
+          <a href="{{ url_for('views.home') }}" class="w-full block"
+            >Return home</a
+          >
+        </button>
+      </div>
+    </section>
+  </body>
+</html>

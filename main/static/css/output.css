@@ -950,6 +950,9 @@
   .text-\[\#00bbe7\] {
     color: #00bbe7;
   }
+  .text-\[\#72e441\] {
+    color: #72e441;
+  }
   .text-\[\#394a63\] {
     color: #394a63;
   }
@@ -965,6 +968,9 @@
   .text-\[\#aa9b9b\] {
     color: #aa9b9b;
   }
+  .text-\[\#bd3535\] {
+    color: #bd3535;
+  }
   .text-\[\#c5b6b6\] {
     color: #c5b6b6;
   }
@@ -976,6 +982,9 @@
   }
   .text-\[\#f9f7f7\] {
     color: #f9f7f7;
+  }
+  .text-\[\#ff0000\] {
+    color: #ff0000;
   }
   .text-\[\#fff\] {
     color: #fff;
@@ -991,6 +1000,9 @@
   }
   .text-white {
     color: var(--color-white);
+  }
+  .uppercase {
+    text-transform: uppercase;
   }
   .underline {
     text-decoration-line: underline;
@@ -1033,6 +1045,10 @@
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .ease-in-out {
+    --tw-ease: var(--ease-in-out);
+    transition-timing-function: var(--ease-in-out);
   }
   .before\:absolute {
     &::before {
@@ -1410,6 +1426,10 @@
   inherits: false;
 }
 @property --tw-backdrop-sepia {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ease {
   syntax: "*";
   inherits: false;
 }

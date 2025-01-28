@@ -11,12 +11,14 @@ endblock %} {% block content %}
       <h2 class="text-3xl font-bold text-center text-white mb-6">
         🚀 Book Your Seat
       </h2>
-      <form class="space-y-4">
+      <form
+        class="space-y-4"
+        method="post"
+        action="{{ url_for('views.book_seat') }}"
+      >
         <!-- Full Name -->
         <div>
-          <label
-            class="block text-gray-400 text-sm font-medium mb-1"
-            for="fullName"
+          <label class="block text-gray-400 text-sm font-medium mb-1" for="name"
             >Full Name</label
           >
           <input
@@ -25,6 +27,7 @@ endblock %} {% block content %}
             placeholder="Enter your name"
             class="w-full px-4 py-3 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-indigo-500 focus:outline-none transition"
             required
+            name="name"
           />
         </div>
         <!-- Email -->
@@ -40,6 +43,7 @@ endblock %} {% block content %}
             placeholder="Enter your email"
             class="w-full px-4 py-3 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-indigo-500 focus:outline-none transition"
             required
+            name="email"
           />
         </div>
         <!-- From -->
@@ -92,10 +96,11 @@ endblock %} {% block content %}
             type="number"
             id="seats"
             min="1"
-            max="10"
+            max="100"
             placeholder="Enter number of seats"
             class="w-full px-4 py-3 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-indigo-500 focus:outline-none transition"
             required
+            name="seats"
           />
         </div>
         <!-- Submit Button -->
