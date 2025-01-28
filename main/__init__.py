@@ -12,7 +12,7 @@ def create_app():
     app = Flask(__name__, static_folder='static', template_folder='templates')
     app.config['SECRET_KEY'] = os.urandom(24)
     app.config["SQLALCHEMY_DATABASE_URI"] = f"sqlite:///{DB_NAME}"
-    # db.init_app(app)
+    db.init_app(app)
     from .models import User
     from .views import views
 
@@ -29,9 +29,6 @@ def create_app():
     def load_user(id):
         return User.query.get(int(id))
 
-    @app.route("/")
-    def index():
-        return render_template("home/home.html")
     
 
     return app
