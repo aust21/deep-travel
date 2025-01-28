@@ -1,4 +1,5 @@
-<header class="w-full fixed z-10">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/nav.css') }}" />
+<header class="w-full fixed z-50">
   <nav class="nav flex justify-between items-center w-full mx-auto py-5 px-10">
     <a href="{{ url_for('views.home') }}"
       ><img
@@ -6,6 +7,29 @@
         alt="DeepT"
         class="w-[8rem]"
     /></a>
+    <ul class="hidden justify-between items-center md:flex">
+      <li class="mr-[1.5rem]">
+        <a
+          href="{{ url_for('views.homestead') }}"
+          class="text-white text-sm font-semibold"
+          >HomeStead 1</a
+        >
+      </li>
+      <li class="mr-[1.5rem]">
+        <a
+          href="{{ url_for('views.spaceship') }}"
+          class="text-white text-sm font-semibold"
+          >Spaceship L</a
+        >
+      </li>
+      <li class="mr-[1.5rem]">
+        <a
+          href="{{ url_for('views.tetraton') }}"
+          class="text-white text-sm font-semibold"
+          >TetraTron V</a
+        >
+      </li>
+    </ul>
 
     <ul
       id="navigation"
@@ -44,7 +68,7 @@
         <a href="{{ url_for('views.book_seat') }}">Book a seat</a>
       </button>
       <button
-        class="toggle"
+        class="toggle cursor-pointer z-[1111111111111]"
         type="button"
         name="button"
         aria-expanded="false"
