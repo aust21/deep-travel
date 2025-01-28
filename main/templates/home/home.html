@@ -1,5 +1,7 @@
 {% extends 'base.html' %} {% block title %}Home | Deep Travel{% endblock %} {%
 block content %}
+
+<link rel="stylesheet" href="{{url_for('static', filename='css/cards.css')}}" />
 <section
   class="relative min-h-[80vh] bg-[url(../../static/assets/r5.jpg)] bg-no-repeat bg-cover"
 >
@@ -45,6 +47,56 @@ block content %}
           rich natural resources, and stunning landscapes ready to be explored
           and settled.
         </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-10">
+  <div class="w-[40%] mx-auto text-center">
+    <h3 class="text-2xl text-[#f9f7f7] mb-5 font-semibold">
+      Our Vehicles: The Backbone of Your Space Adventure
+    </h3>
+    <p class="text-[#aa9b9b] text-sm font-semibold">
+      Our vehicles are engineered with cutting-edge technology to withstand the
+      harshest conditions of space travel. From atmospheric exits to
+      interplanetary landings, every journey is seamless and safe. Space travel
+      doesn’t have to mean sacrifice. Our vehicles offer state-of-the-art
+      interiors, designed to keep you comfortable and secure. Enjoy spacious
+      cabins, panoramic windows, and a smooth ride from launch to landing.
+    </p>
+  </div>
+</section>
+
+<section class="section3">
+  <div class="images flex justify-between items-center">
+    <div class="card bg-[url(../assets/i.jpg)]">
+      <div class="card-content">
+        <h2 class="card-title">Enjoy the view</h2>
+        <p class="card-body text-sm">
+          Enjoy breathtaking views at the speed of light
+        </p>
+        <!-- <a href="#form" class="button">Contact Us</a> -->
+      </div>
+    </div>
+
+    <div class="card bg-[url(../assets/r.jpg)]">
+      <div class="card-content">
+        <h2 class="card-title">Trust in thrust</h2>
+        <p class="card-body text-sm">
+          Our powerful engines can lift cargo of any size
+        </p>
+        <!-- <a href="#form" class="button">Contact Us</a> -->
+      </div>
+    </div>
+
+    <div class="card bg-[url(../assets/i6.jpg)]">
+      <div class="card-content">
+        <h2 class="card-title">Hotel in space</h2>
+        <p class="card-body text-sm">
+          Enjoy living first class suites travelling through space
+        </p>
+        <!-- <a href="#form" class="button">Contact Us</a> -->
       </div>
     </div>
   </div>
