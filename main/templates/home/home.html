@@ -16,10 +16,20 @@ block content %}
       ><span class="text-[#00FF00]">.</span>
     </h1>
     <a
-      class="text-xl font-semibold bg-[#66baa8] px-5 py-2"
+      class="hidden text-xl font-semibold bg-[#66baa8] px-5 py-2 md:inline"
       href="{{ url_for('views.homestead') }}"
       >HomeStead 1</a
     >
+
+    <button
+      class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-xs hover:bg-gray-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white w-[10rem] md:hidden"
+      type="button"
+      name="book-btn"
+    >
+      <a href="{{ url_for('views.book_seat') }}" class="w-full block"
+        >Book a seat</a
+      >
+    </button>
   </div>
   <!-- Add the fading effect -->
   <div
