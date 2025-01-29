@@ -28,13 +28,13 @@ def book_seat():
 def homestead():
     return render_template("resources/homestead.html")
 
-@views.route("/tetraton")
+@views.route("/teratron")
 def tetraton():
-    return "hi"
+    return render_template("resources/teratron.html")
 
 @views.route("/spaceship")
 def spaceship():
-    return "yhup"
+    return render_template("resources/ship.html")
 
 @views.route("/thank-you")
 def thanks():
