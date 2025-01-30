@@ -1,6 +1,29 @@
-from flask import Flask, Blueprint, render_template, request, redirect, url_for
+import os
+import random
+
+from flask import Flask, Blueprint, render_template, request, redirect, url_for, current_app
+from flask_login import current_user
+from flask_mail import Message
+
+from main import mail
 
 views = Blueprint("views", __name__)
+APP_PASSWORD = "pqph qshg lwvu dlvd"
+EMAIL = "aust21ncode@gmail.com"
+
+def send_mail(name, email, destination, seat_number, flight_code):
+    msg = Message('Deep Travel | Travel Ticket',
+                  sender=current_app.config['MAIL_USERNAME'],
+                  recipients=[email])
+
+    msg.html = render_template('email/ticket.html',
+                               name=name,
+                               destination=destination,
+                               seat_number=seat_number,
+                               flight_code=flight_code
+                               )
+
+    mail.send(msg)
 
 @views.route("/")
 def home():
@@ -14,12 +37,14 @@ def book_seat():
         email = request.form.get("email")
         destination = request.form.get("destination")
         departure = request.form.get("departure")
+        seat_number = random.randint(1, 100)
+        flight_code = "#" + str(random.randint(1213, 3323))
 
         # Validate form fields
         if all([name, email, destination, departure]):
+            send_mail(name, email, destination, seat_number, flight_code)
             return redirect(url_for("views.thanks"))
-        else:
-            return redirect(url_for("views.error"))
+        return redirect(url_for("views.error"))
     
     return render_template("home/book.html")
 

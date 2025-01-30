@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Space Travel Ticket</title>
+</head>
+<body style="min-height:100vh; display:flex; justify-content:center; align-items:center; margin: 0; padding: 0; background-color: #fff; font-family: Arial, sans-serif; color: #ffffff; text-align:center">
+  <table cellspacing="0" cellpadding="0" style="background-color: #fff; border-radius:10px; width:40%">
+    <tr>
+      <td align="center">
+        <!-- Main Container -->
+        <table width="600" cellspacing="0" cellpadding="20" style="background-color: #111827; border-radius: 10px; box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.3);">
+          <!-- Header -->
+          <tr>
+            <td align="center">
+              <h2 style="color: #0ef; text-transform: uppercase; font-size: 24px; letter-spacing: 2px;">✨ You're Levitating! 🚀</h2>
+              <p style="color: #aaa; font-size: 14px;">If you wanna run away with us, we know a galaxy... and we can take you for a ride! 🌌</p>
+            </td>
+          </tr>
+
+          <!-- Ticket Details -->
+          <tr>
+            <td style="border-top: 2px solid #0ef; border-bottom: 2px solid #0ef; padding: 20px;">
+              <table width="100%" cellspacing="0" cellpadding="10">
+                <tr>
+                  <td style="color: #0ef; font-size: 14px;">Passenger Name:</td>
+                  <td style="color: #ffffff; font-size: 16px; font-weight: bold;">{{ name }}</td>
+                </tr>
+                <tr>
+                  <td style="color: #0ef; font-size: 14px;">Destination:</td>
+                  <td style="color: #ffffff; font-size: 16px; font-weight: bold;">{{ destination }}</td>
+                </tr>
+                <tr>
+                  <td style="color: #0ef; font-size: 14px;">Departure Date:</td>
+                  <td style="color: #ffffff; font-size: 16px; font-weight: bold;">{{ departure_date }}</td>
+                </tr>
+                <tr>
+                  <td style="color: #0ef; font-size: 14px;">Seat Number:</td>
+                  <td style="color: #ffffff; font-size: 16px; font-weight: bold;">{{ seat_number }}</td>
+                </tr>
+                <tr>
+                  <td style="color: #0ef; font-size: 14px;">Flight Code:</td>
+                  <td style="color: #ffffff; font-size: 16px; font-weight: bold;">{{ flight_code }}</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- QR Code (Optional) -->
+
+          <!-- Fun Section -->
+          <tr>
+            <td align="center">
+              <p style="color: #aaa; font-size: 14px;">"You want me, we want you, baby. The Milky Way, we’re renegading. Come on, dance with us in zero gravity! 🪐"</p>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td align="center">
+              <p style="color: #aaa; font-size: 12px;">Thank you for choosing <span style="color: #0ef;">Deep Travel</span>. We got you, moonlight. You're our starlight. 🌙✨</p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
