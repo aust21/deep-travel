@@ -8,8 +8,6 @@ from flask_mail import Message
 from main import mail
 
 views = Blueprint("views", __name__)
-APP_PASSWORD = "pqph qshg lwvu dlvd"
-EMAIL = "aust21ncode@gmail.com"
 
 def send_mail(name, email, destination, seat_number, flight_code):
     msg = Message('Deep Travel | Travel Ticket',
