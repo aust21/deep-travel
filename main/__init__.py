@@ -19,8 +19,8 @@ def create_app():
     app.config['MAIL_SERVER'] = 'smtp.gmail.com'
     app.config['MAIL_PORT'] = 587
     app.config['MAIL_USE_TLS'] = True
-    app.config['MAIL_USERNAME'] = 'aust21ncode@gmail.com'
-    app.config['MAIL_PASSWORD'] = "pqph qshg lwvu dlvd"
+    app.config['MAIL_USERNAME'] = os.getenv("aust21email")
+    app.config['MAIL_PASSWORD'] = os.getenv("aust21pass")
     db.init_app(app)
     mail.init_app(app)
     from .models import User
